@@ -8,8 +8,8 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
-@WebFilter(urlPatterns = {"/views/admin/*", "/views/projet/*",
-       "/ProjetServlet"})
+@WebFilter(urlPatterns = {"/views/admin/*", "/views/projet/*", "/views/tache/*", "/views/ressource/*", "/views/fournisseur/*",
+        "/ProjetServlet", "/TacheServlet", "/RessourceServlet", "/FournisseurServlet"})
 public class AdminFilter implements Filter {
 
     @Override
