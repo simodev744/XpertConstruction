@@ -45,9 +45,9 @@
             <td><%= projet.getBudget() %></td>
             <td><%= projet.getStatut() %></td>
             <td>
-                <a href="<%= request.getContextPath() %>/TacheServlet?action=list&projetId=<%= projet.getId() %>" >View Taches</a>
-                <a href="<%= request.getContextPath() %>/ProjetServlet?action=showUpdateForm&id=<%= projet.getId() %>">Update</a>
-                <a href="<%= request.getContextPath() %>/ProjetServlet?action=delete&id=<%= projet.getId() %>"  onclick="return confirm('vous etes sure ?')">Delete</a>
+                <a href="<%= request.getContextPath() %>/TacheServlet?action=list&projetId=<%= projet.getId() %>" >afficher les Taches</a>
+                <a href="<%= request.getContextPath() %>/ProjetServlet?action=showUpdateForm&id=<%= projet.getId() %>">mise a jour</a>
+                <a href="<%= request.getContextPath() %>/ProjetServlet?action=delete&id=<%= projet.getId() %>"  onclick="return confirm('vous etes sure ?')">supprimer</a>
             </td>
         </tr>
         <% } %>
