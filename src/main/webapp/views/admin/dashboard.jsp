@@ -11,6 +11,7 @@
     <title>Tableau de Bord Admin</title>
 </head>
 <body>
+<%@ include file="../includes/header.jsp" %>
 <div>
     <h1>Bienvenue, <%= admin.getNomUtilisateur() %>!</h1>
     <p>Ceci est le tableau de bord administrateur.</p>

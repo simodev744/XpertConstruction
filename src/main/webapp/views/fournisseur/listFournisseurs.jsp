@@ -12,7 +12,6 @@
     <title>Liste des Fournisseurs</title>
 </head>
 <body>
-<%@ include file="../includes/header.jsp" %>
 <div>
     <h2>Liste des Fournisseurs</h2>
     <a href="<%= request.getContextPath() %>/FournisseurServlet?action=showAddForm">Ajouter un Fournisseur</a>
