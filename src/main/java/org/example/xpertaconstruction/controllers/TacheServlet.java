@@ -308,7 +308,6 @@ public class TacheServlet extends HttpServlet {
 
         List<RessourceTache> assignedResources = tacheDao.getAssignedResourcesForTask(tacheId);
 
-
         List<Ressource> resourceDetails = new ArrayList<>();
         for (RessourceTache assignment : assignedResources) {
             Ressource ressource = ressourceDao.getRessourceById(assignment.getRessourceId());
@@ -316,7 +315,6 @@ public class TacheServlet extends HttpServlet {
                 resourceDetails.add(ressource);
             }
         }
-
 
         request.setAttribute("tache", tache);
         request.setAttribute("projet", projet);

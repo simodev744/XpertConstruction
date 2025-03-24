@@ -70,7 +70,7 @@ public class AdminServlet extends HttpServlet {
                 session.setAttribute("admin", admin);
                 response.sendRedirect(request.getContextPath() + "/views/admin/dashboard.jsp");
             } else {
-                request.setAttribute("error", "Invalid pseudo ou mot de passe.");
+                request.setAttribute("error", "Invalid utilisateur ou mot de passe.");
                 request.getRequestDispatcher("/views/login.jsp").forward(request, response);
             }
         } catch (SQLException e) {

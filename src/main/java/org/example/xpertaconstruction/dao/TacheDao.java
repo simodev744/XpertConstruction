@@ -136,13 +136,14 @@ public class TacheDao {
             int rowsAffected = pstmtUpdateResource.executeUpdate();
 
             if (rowsAffected == 0) {
-                throw new SQLException("resource introuvable ou qantité est insuffisant.");
+                throw new SQLException("resource introuvable ou quantité est insuffisant.");
             }
 
 
             conn.commit();
 
-        } catch (SQLException e) {
+        }
+        catch (SQLException e) {
             if (conn != null) {
                 try {
                     conn.rollback();
